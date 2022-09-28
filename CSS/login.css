@@ -1,0 +1,520 @@
+/* Start Global Rules */
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sen', sans-serif;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* #### Colors #### */
+
+:root {
+    --link-colors: #519259;
+    --shadow-color: #6bae73;
+    --text-color: #aaa;
+    --main-text-colot: #000;
+    --price-background-color: #eee;
+    --price-bakcground-second-color: #fff;
+    --second-color: #febd2e;
+    --background-color-secion-one: #fff7e6;
+    --background-color-secion-two: #eff6ef;
+    --font-size-h2: 4rem;
+    --font-size-paragragh: 1.5rem;
+    --pink-color: #f94892;
+}
+
+.pink-color {
+    color: var(--pink-color);
+}
+
+.link-color {
+    color: var(--link-colors);
+}
+
+.dark-color {
+    color: var(--text-color);
+}
+
+.gradient-color {
+    background-image: linear-gradient(to right, #519259, #9cc9a1);
+    color: var(--price-bakcground-second-color);
+    box-shadow: 15px 15px 50px var(--shadow-color);
+    border: none;
+    cursor: pointer;
+}
+
+.selected {
+    color: var(--main-text-colot);
+    background-color: #deede0;
+    border-radius: 25px;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+/* #### Colors ####*/
+
+.container {
+    margin: auto;
+    padding: 0px 20px;
+}
+
+.main-text {
+    text-align: center;
+    padding-bottom: 20px;
+    width: 100%;
+    margin: auto;
+}
+
+.main-text h2 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+
+}
+
+.main-text p {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--text-color);
+    width: 700px;
+    margin: auto;
+    line-height: 2;
+}
+
+@media(min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media(min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media(min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* End global rules */
+
+/* Start Lognin */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+
+}
+
+.container .header-logo {
+    padding: 40px 0px 60px;
+}
+
+.container .header-logo a i {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.container .header-logo a span {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.container .sign-in {
+    color: var(--second-color);
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.container .main-box-sign-in>p {
+    color: var(--text-color);
+    font-size: var(--font-size-paragragh);
+    font-weight: 700;
+    margin: 40px auto;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container form .sign-in-email-text,
+.container form .sign-in-password {
+    position: relative;
+}
+
+.container form .sign-in-email-text input:focus,
+.container form .sign-in-password input:focus {
+    border-color: var(--link-colors);
+}
+
+.container form .sign-in-email-text input,
+.container form .sign-in-password input {
+    padding: 15px;
+    border-radius: 25px;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 20px 0px;
+    border: 1px solid var(--text-color);
+    width: 100%;
+}
+
+.container form .email:focus~.your-name,
+.container form .email:valid~.your-name {
+    color: var(--link-colors);
+    transform: translate(0px, -25px);
+    background-color: var(--price-bakcground-second-color);
+}
+
+.container form .pass:focus~.password,
+.container form .pass:valid~.password {
+    color: var(--link-colors);
+    transform: translate(0px, -25px);
+    background-color: var(--price-bakcground-second-color);
+}
+
+.container form input,
+.container form label {
+    transition: .5s;
+}
+
+.container form .sign-in-email-text .your-name,
+.container form .sign-in-password .password {
+    font-size: 1.5rem;
+    position: absolute;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+}
+
+.container form .your-name {
+    top: 40%;
+    left: 5%;
+}
+
+.container form .password {
+    top: 40%;
+    left: 5%;
+}
+
+.container form .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+.container form .box .check-box>input:checked {
+    color: var(--link-colors);
+    background-color: var(--link-colors);
+    cursor: pointer;
+}
+
+.container form .box .check-box>label {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.container form .box .forgot-password a {
+    color: #ff0000;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.container .button {
+    background-color: var(--link-colors);
+    width: 100%;
+    border-radius: 25px;
+    text-align: center;
+    padding: 15px;
+    margin: 10px auto 30px;
+    cursor: pointer;
+}
+
+.container .button button {
+    color: var(--price-bakcground-second-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    background-color: var(--link-colors);
+}
+
+.container .have-account {
+    padding: 15px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: var(--background-color-secion-two);
+}
+
+.container .have-account>div {
+    width: 100%;
+    color: var(--main-text-colot);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.container .have-account>div>a {
+    color: var(--main-text-colot);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.container .have-account>div>a:hover {
+    color: var(--link-colors);
+}
+
+/* End Lognin */
+
+/* Start Register */
+
+.container .main-register .register {
+    color: var(--link-colors);
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.container .main-register>p {
+    color: var(--text-color);
+    font-size: var(--font-size-paragragh);
+    font-weight: 700;
+    margin: 40px auto;
+}
+
+.container .main-register>form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.container .main-register>form .pass-word-register,
+.container .main-register>form .phone-number-country,
+.container .main-register>form .your-name-register {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .main-register>form .your-name-register .last-name,
+.container .main-register>form .your-name-register .first-name {
+    position: relative;
+}
+
+.container .main-register>form .your-name-register .last-name>label,
+.container .main-register>form .your-name-register .first-name>label {
+    position: absolute;
+    top: 42%;
+    left: 10%;
+    font-size: 1.5rem;
+}
+
+.container .main-register>form .phone-number-country .your-country,
+.container .main-register>form .phone-number-country .phone-number {
+    position: relative;
+}
+
+.container .main-register>form .phone-number-country .phone-number>label {
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    font-size: 1.5rem;
+}
+
+.container .main-register>form .phone-number-country .your-country>i {
+    position: absolute;
+    font-size: 1.5rem;
+    left: 85%;
+    top: 40%;
+}
+
+.container .main-register>form .phone-number-country .your-country>.select {
+    cursor: pointer;
+
+}
+
+.container .main-register>form .phone-number-country .your-country>label {
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    font-size: 1.5rem;
+}
+
+.container .main-register>form input {
+    padding: 15px;
+    border-radius: 25px;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 20px 0px;
+    border: 1px solid var(--text-color);
+}
+
+/* ########### */
+
+.container .main-register form input:focus {
+    border-color: var(--link-colors);
+}
+
+.container .main-register form input:focus:not(#privacy)~label:not(#pri-label),
+.container .main-register form input:valid:not(#privacy)~label:not(#pri-label) {
+    color: var(--link-colors);
+    transform: translate(0px, -25px);
+    background-color: var(--price-bakcground-second-color);
+}
+
+/* ########### */
+
+.container .main-register>form .mail-address {
+    position: relative;
+}
+
+.container .main-register>form .mail-address input {
+    width: 100%;
+}
+
+.container .main-register>form .mail-address label {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    font-size: 1.5rem;
+}
+
+.container .main-register>form .pass-word-register #true {
+color: #519259;
+border-color: red;
+}
+
+.container .main-register>form .pass-word-register .pass-word-confirm,
+.container .main-register>form .pass-word-register .pass-word-one {
+    position: relative;
+}
+.container .main-register>form .pass-word-register .pass-word-confirm >p,
+.container .main-register>form .pass-word-register .pass-word-one >p{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    color: #ff0000;
+    font-size: 1.2rem;
+}
+
+.container .main-register>form .pass-word-register .pass-word-confirm>input,
+.container .main-register>form .pass-word-register .pass-word-one>input {
+    padding: 15px;
+}
+
+.container .main-register>form .pass-word-register .pass-word-one>i {
+    position: absolute;
+    left: 85%;
+    top: 40%;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.container .main-register>form .pass-word-register .pass-word-one>label {
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    font-size: 1.5rem;
+}
+
+.container .main-register>form .pass-word-register .pass-word-confirm>label {
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    font-size: 1.5rem;
+}
+
+.container .main-register>form .pass-word-register .pass-word-confirm>i {
+    position: absolute;
+    left: 85%;
+    top: 40%;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+.container .main-register>form .privacy-policy {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    margin: 10px 0px;
+
+}
+
+
+.container .main-register>form .privacy-policy label span {
+    color: var(--second-color);
+    font-size: 1.5rem;
+}
+
+.container .main-register>form .privacy-policy label {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.container .main-register>form .privacy-policy input {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.container .main-register .main-button {
+    display: flex;
+
+}
+
+.container .main-register .main-button .get-started,
+.container .main-register .main-button .login {
+    padding: 15px;
+    border-radius: 25px;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid var(--text-color);
+}
+
+.container .main-register .main-button .login {
+    margin: 20px 10px 20px 0px;
+    flex: 1;
+
+    background-color: var(--price-background-color);
+}
+
+.container .main-register .main-button .get-started {
+    margin: 20px 0px;
+    flex: 1.5;
+    background-color: var(--link-colors);
+    color: var(--price-bakcground-second-color);
+}
+
+/* End Register */
