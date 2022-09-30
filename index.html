@@ -55,72 +55,11 @@
                 <button>Login</button>
             </div>
             <div class="have-account">
-                <div>Alrady have Foodroad account?<a href=""> Log In</a></div>
+                <div>Alrady have Foodroad account?<a href="https://mohammad-kaddur.github.io/Food_Road_Login/"> Log
+                        In</a></div>
             </div>
         </div>
 
-        <!-- Register -->
-        <div class="main-register">
-            <h3 class="header-logo">
-                <a href="">
-                    <i style="color: #febd2e;" class="fa-solid fa-utensils"></i>
-                    <span style="color: #519259;">Food</span><span style="color: #febd2e;">Road</span>
-                </a>
-            </h3>
-            <span class="register">Register</span>
-            <p>Let's Sign Up First For Enter Into Food Rood Website.Uh She Up!</p>
-            <form action="">
-                <div class="your-name-register">
-                    <div class="first-name">
-                        <input type="text" name="" id="first-name" required="">
-                        <label for="first-name">First Name</label>
-                    </div>
-                    <div class="last-name">
-                        <input type="text" name="" id="last-name" required="">
-                        <label for="last-name">Last Name</label>
-                    </div>
-                </div>
-                <div class="phone-number-country">
-                    <div class="phone-number">
-                        <input type="number" id="number" required="">
-                        <label for="number">Phone Number</label>
-                    </div>
-                    <div class="your-country">
-                        <input type="search" class="select" id="your-country" required="">
-                        <i class="fa-solid fa-angle-down"></i>
-                        <label for="your-country">Your Country</label>
-                    </div>
-                </div>
-                <div class="mail-address">
-                    <input type="email" name="" id="mail-address" required="">
-                    <label for="mail-address">Mail Address</label>
-                </div>
-                <div id="show-hide" class="pass-word-register">
-                    <div class="pass-word-one">
-                        <input :type="fieldType" name="" id="password" required="" v-model="passWord">
-                        <label for="password">PassWord</label>
-                        <i @click="swithchField" :class="classes"></i>
-                        <p>{{validatePassWord}}</p>
-                    </div>
-                    <div class="pass-word-confirm">
-                        <input :type="fieldType" name="" id="confirm-password" required="" v-model="passWords">
-                        <label for="confirm-password">Confirm Password</label>
-                        <i @click="swithchField" :class="classes"></i>
-                        <!-- <p>{{vlaidateConfirmPassWords}}</p> -->
-                        <!-- <p>{{vlaidate()}}</p> -->
-                    </div>
-                </div>
-                <div class="privacy-policy">
-                    <input type="checkbox" name="" id="privacy" required="">
-                    <label id="pri-label" for="privacy">I agree to Square's <span>Cookie</span> and <span>Privacy
-                            Policy</span></label>
-                </div>
-            </form>
-            <div class="main-button">
-                <button class="login">Login</button>
-                <button class="get-started">Get Started</button>
-            </div>
-        </div>
     </div>
 
     <script src="JS/vue.js"></script>
